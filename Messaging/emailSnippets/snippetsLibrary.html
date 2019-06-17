@@ -452,7 +452,7 @@ pre code {
 
 		</head>
 
-	<body>
+	<body id="topOfPage">
 
 <br />
 
@@ -4001,6 +4001,13 @@ $(document).ready(function(){
 		$(this).closest("div").find("pre").slideToggle();
 		return false;
 	});
+});
+
+
+$(document).ready(function(){
+
+    top.location.href = '#topOfPage';
+
 });
 
 
