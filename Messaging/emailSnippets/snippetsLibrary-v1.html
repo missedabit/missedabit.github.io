@@ -4010,30 +4010,31 @@ pre code {
 
 	<script>
 	
-$(document).ready(function(){
+		$(document).ready(function(){
 
-	$("pre").hide();
-	$(".codeLink a").click(function(){
-		$(this).closest("div").find("pre").slideToggle();
-		return false;
-	});
+			$("pre").hide();
+			$(".codeLink a").click(function(){
+				$(this).closest("div").find("pre").slideToggle();
+				return false;
+			});
 
-    top.location.href = '#topOfPage';
-	
-	$("a[name=copy_pre]").click(function() {
-		var id = $(this).attr('id');
-		var el = document.getElementById(id);
-		var range = document.createRange();
-		range.selectNodeContents(el);
-		var sel = window.getSelection();
-		sel.removeAllRanges();
-		sel.addRange(range);
-		document.execCommand('copy');
-		return false;
-	});
-	
-});
+			$("a[name=copy_pre]").click(function() {
+				var id = $(this).attr('id');
+				var el = document.getElementById(id);
+				var range = document.createRange();
+				range.selectNodeContents(el);
+				var sel = window.getSelection();
+				sel.removeAllRanges();
+				sel.addRange(range);
+				document.execCommand('copy');
+				return false;
+			});
+			
+		});
 
+		window.onbeforeunload = function () {
+				window.scrollTo(0,0);
+		};
 
 	</script>
 
