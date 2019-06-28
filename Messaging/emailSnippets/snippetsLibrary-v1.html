@@ -406,9 +406,12 @@
 			
 			<style type="text/css">
 				h2 { color:#6400AA }
-				.snippetTypes, .snippetName { font-family:Arial, sans-serif }
+				.snippetTypes, .snippetName, .snippetHeader { font-family:Arial, sans-serif }
 					.snippetName { font-size:20px; border-top:1px solid #6400AA; border-bottom:1px solid #6400AA; color:#6400AA; width:97%; display:block; padding:10px 0 10px 20px; border-radius:0 }
 					.snippetTypes { padding:10px 20px; width:97% }
+					.snippetHeader { padding:0 20px 10px 20px; display:inline-block; border-bottom:1px solid #6400AA; width:97% }
+					.snippetHeaderImg { padding:10px 20px; display:inline-block; width:97% }
+						.snippetHeader h2 { display:inline }
 					.snippetItemList li { list-style-type:none; padding-bottom:3px }
 						.snippetItemList li a { color:#6400AA }
 					
@@ -454,14 +457,18 @@ pre code {
 		</head>
 
 	<body id="topOfPage">
-
-<br />
-
+	
 <a name="topPage"></a>
 
-<div class="snippetTypes">
+<div class="snippetHeaderImg">
 	<img src="https://business.bt.com/content/dam/bt/business/campaign/email/patterns/bt-logo.png" alt="BT" width="64" height="30" style="float:right; background-color:#6400AA; padding:10px; border-radius:5px">
-	<h2>Email snippets</h2>
+</div>
+
+<div class="snippetHeader">
+	<h2>Email snippets library</h2>
+</div>
+
+<div class="snippetTypes">
 	<ul class="snippetItemList">
 		<li>&gt;&nbsp;&nbsp;<a href="#headerSnippet">Header Snippets</a></li>
 		<li>&gt;&nbsp;&nbsp;<a href="#heroSnippet">Hero Snippets</a></li>
