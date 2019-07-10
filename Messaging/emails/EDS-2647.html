@@ -191,7 +191,9 @@
 			border-radius: 5px;
 		}
 		
-		.list-items li { margin-bottom:5px }
+		.list-items tr { display:block; margin:0; padding:0 0 5px 0 }
+			.list-items td { padding-right:10px }
+			.list-items td.list-bullet { vertical-align:top }
 
 		/* Email, with care */
 
@@ -440,13 +442,13 @@
 		<!-- /header -->
 
 		<!-- hero component -->
-	<tr>
-		<td align="center">
-			<table class="section" cellpadding="0" cellspacing="0" border="0" width="100%">
-				<tbody>
-					<tr>
-						<td valign="middle" align="center" bgcolor="#FAFAFA" style="padding: 0 0 0 0; background:#FAFAFA;">
-							<table class="wrapper" role="presentation" style="min-width:600px; width: 600px;" cellspacing="0" cellpadding="0" border="0" width="600" bgcolor="#6400AA">
+		<tr>
+			<td align="center">
+				<table class="section" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tbody>
+						<tr>
+							<td valign="middle" align="center" bgcolor="#FAFAFA" style="padding: 0 0 0 0; background:#FAFAFA;">
+								<table class="wrapper" role="presentation" style="min-width:600px; width: 600px;" cellspacing="0" cellpadding="0" border="0" width="600" bgcolor="#6400AA">
 									<tbody>
 										<tr>
 											<td class="show" style="padding:0; display:none; height:0; font-size:0; line-height:0;" align="center">			
@@ -535,12 +537,14 @@
 									<tr>
 										<td align="left" style="color: #333333; font-family: 'bt-regular-rg', Calibri, Arial, sans-serif; font-size: 16px; line-height: 21px; margin: 0; mso-line-height-rule: exactly;">
 											<b>What to do now:</b>
-											<ul style="padding-left: 16px;" class="list-items">
-												<li>Sign in to <a href="/my-account-link/" style="color: #6400aa;">My Account</a> using your temporary password and user name. (we’ve emailed this to you separately for your security.)</li>
-												<li>Once you’ve signed in, change your password to something more memorable</li>
-												<li>Start enjoying the benefits of your personal online account</li>
-												<li>Plus access all your value added services using the same password and username.</li>
-											</ul>
+											<table class="list-items" cellspacing="0" cellpadding="0" border="0">
+												<tr><td colspan="2" style="padding:10px"></td></tr>
+												<tr><td class="list-bullet">&bull;</td><td>Sign in to <a href="/my-account-link/" style="color: #6400aa;">My Account</a> using your temporary password and user name. (we’ve emailed this to you separately for your security.)</td></tr>
+												<tr><td class="list-bullet">&bull;</td><td>Once you’ve signed in, change your password to something more memorable</td></tr>
+												<tr><td class="list-bullet">&bull;</td><td>Start enjoying the benefits of your personal online account</td></tr>
+												<tr><td class="list-bullet">&bull;</td><td>Plus access all your value added services using the same password and username.</td></tr>
+												<tr><td colspan="2" style="padding:10px"></td></tr>
+											</table>
 											Thanks,<br />
 											Your BT team<br /><br />
 										</td>
@@ -616,13 +620,17 @@
 				<table width="600" class="fluid" style="margin: 0; table-layout: fixed; max-width: 600px; width: 600px;" bgcolor="#FFFFFF" border="0" cellspacing="0" cellpadding="0">
 					<tr>
 						<td align="left" style="padding: 0 20px 0; font-family: 'bt-regular-rg', Calibri, Arial, sans-serif; color: #333333; font-size:16px;line-height:21px;">
-							<ul style="padding-left: 16px;" class="list-items">
-								<li>Track your order</li>
-								<li>Instantly see your bills</li>
-								<li>Get updates on service and usage</li>
-								<li>Give wi-fi to your guests</li>
-								<li>Get in touch with us</li>
-							</ul>
+							
+							<table class="list-items" cellspacing="0" cellpadding="0" border="0">
+								<tr><td colspan="2" style="padding:10px"></td></tr>
+								<tr><td class="list-bullet">&bull;</td><td>Track your order</td></tr>
+								<tr><td class="list-bullet">&bull;</td><td>Instantly see your bills</td></tr>
+								<tr><td class="list-bullet">&bull;</td><td>Get updates on service and usage</td></tr>
+								<tr><td class="list-bullet">&bull;</td><td>Give wi-fi to your guests</td></tr>
+								<tr><td class="list-bullet">&bull;</td><td>Get in touch with us</td></tr>
+								<tr><td colspan="2" style="padding:10px"></td></tr>
+							</table>
+							
 							<a href="/more-about-the-app-link/" style="color: #6400AA; font-family: 'bt-regular-rg', Calibri, Arial, sans-serif; font-size: 16px; padding: 0px 20px 0 0; text-decoration: none; ">
 								More about the app
 								<span class="arrow">

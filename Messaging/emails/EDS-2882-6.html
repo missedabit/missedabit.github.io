@@ -191,7 +191,9 @@
 			border-radius: 5px;
 		}
 		
-		.list-items li { margin-bottom:5px }
+		.list-items tr { display:block; margin:0; padding:0 0 5px 0 }
+			.list-items td { padding-right:10px }
+			.list-items td.list-bullet { vertical-align:top }
 
 		/* Email, with care */
 
@@ -523,26 +525,46 @@
 		<!-- /intro section component -->
 
 
-
-		<!-- section: section component -->
+			
+			<!-- section: section component -->
+		
 		<tr>
 			<td align="center">
-				<table bgcolor="#ffffff" border="0"  class="fluid" width="600" cellpadding="0" cellspacing="0" style="border: none; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0; mso-table-rspace: 0; table-layout: fixed;">
+				<table class="section" cellpadding="0" cellspacing="0" border="0" width="100%">
 					<tbody>
 						<tr>
-							<td align="left" valign="top" style="padding:20px; color: #333333; font-family: 'bt-regular-lt', Calibri, Arial, sans-serif; font-size:26px; line-height:26px; mso-line-height-rule:exactly; font-weight: 300;">
-							About this bill
-							</td>
-						</tr>
-						<tr>
-							<td align="left" valign="top" style="padding: 0 40px 20px 20px; color: #333333; font-family: 'bt-regular-rg', Calibri, Arial, sans-serif; font-size:16px; line-height:1.4; mso-line-height-rule:exactly; font-weight: 400;">
-								As you've added new products to your service with us, we've included the extra charges for the first time.  This means your bill is higher than before.
+							<td valign="middle" align="center" bgcolor="#FAFAFA" style="padding: 0 0 0 0; background:#FAFAFA;">
+								<table class="wrapper" role="presentation" style="min-width:600px; width: 600px;" cellspacing="0" cellpadding="0" border="0" width="600" bgcolor="#eeeeee">
+									<tbody>
+
+										<tr>
+											<td align="center" style="background-color:#ffffff; padding:20px">
+												<table bgcolor="#eeeeee" border="0"  class="fluid" width="560" cellpadding="0" cellspacing="0" style="border-radius:5px; border: none; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0; mso-table-rspace: 0; table-layout: fixed;">
+													<tbody>
+														<tr>
+															<td align="left" valign="top" style="padding: 20px; color: #333333; font-family: 'bt-regular-lt', Calibri, Arial, sans-serif; font-size:26px; line-height:26px; mso-line-height-rule:exactly; font-weight: 300;">
+															About this bill
+															</td>
+														</tr>
+														<tr>
+															<td align="left" valign="top" style="padding: 0 40px 20px 20px; color: #333333; font-family: 'bt-regular-rg', Calibri, Arial, sans-serif; font-size:16px; line-height:1.4; mso-line-height-rule:exactly; font-weight: 400;">
+																As you've added new products to your service with us, we've included the extra charges for the first time.  This means your bill is higher than before.
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+										</tr>
+										
+									</tbody>
+								</table>
 							</td>
 						</tr>
 					</tbody>
 				</table>
 			</td>
-		</tr>
+		</tr>	
+		
 		<!-- /section: section component -->
 		
 		
@@ -558,11 +580,11 @@
 										<table role="presentation" cellpadding="0" cellspacing="0" border="0" class="fluid">
 											<tbody>
 												<tr>
-													<td align="left" valign="top" class="breakme" style="padding: 0 0 10px 0">
-														<table class="buttonTable emailwrapto100pc pb20" border="0" cellpadding="0" cellspacing="0" valign="top" style="padding: 0 0 20px; color: #333333; font-family: 'bt-regular-lt', Calibri, Arial, sans-serif; font-size:16px; line-height:26px; mso-line-height-rule:exactly; font-weight: 400; line-height: 1.4;">
+													<td align="left" valign="top" class="breakme" style="padding:0">
+														<table class="buttonTable emailwrapto100pc" border="0" cellpadding="0" cellspacing="0" valign="top" style="padding:0; color: #333333; font-family: 'bt-regular-lt', Calibri, Arial, sans-serif; font-size:16px; line-height:26px; mso-line-height-rule:exactly; font-weight: 400; line-height: 1.4;">
 															<tbody>
 																<tr>
-																	<td align="left" height="40" style="padding:0 0 0 20px">
+																	<td align="left" height="40" style="padding:0 0 20px 20px">
 																		<table cellspacing="0" cellpadding="0" align="left" class="buttonTable">
 																			<tr>
 																				<td  class="email-btn" align="center" height="40" bgcolor="#6400aa" style="border-radius: 5px; color: #FFFFFF; display: block; border:solid 1px #6400AA">
@@ -579,11 +601,11 @@
 														</table>
 													</td>
 
-													<td align="left" valign="top" class="breakme" style="padding: 0 0 10px 0">
+													<td align="left" valign="top" class="breakme" style="padding:0">
 														<table class="buttonTable" border="0" cellpadding="0" cellspacing="0" valign="top" style="padding: 0; color: #333333; font-family: 'bt-regular-lt', Calibri, Arial, sans-serif; font-size:16px; line-height:26px; mso-line-height-rule:exactly; font-weight: 400; line-height: 1.4;">
 															<tbody>
 																<tr>
-																	<td align="left" height="40" style="padding:0 0 0 20px">
+																	<td align="left" height="40" style="padding:0 0 20px 20px">
 																		<table cellspacing="0" cellpadding="0" align="left" class="buttonTable">
 																			<tr>
 																				<td class="email-btn" align="center" height="40" bgcolor="#ffffff" style="border-radius: 5px; color: #6400AA; display: block; border:solid 1px #6400AA">
@@ -596,13 +618,13 @@
 																		</table> 
 																	</td>
 																</tr>
-																<tr>
-																	<td align="left" valign="top" style="padding:5px 0 20px 20px; color: #333333; font-family: 'bt-regular-lt', Calibri, Arial, sans-serif; font-size:16px; mso-line-height-rule:exactly; font-weight:200;">Call <a href="tel:+8000123456" style="color: #6400AA">[number]</a> to pay by phone</td>
-																</tr>
 															</tbody>
 														</table>
 													</td>
 												</tr>
+												<tr>
+													<td colspan="2" align="left" valign="top" style="padding:0 0 40px 20px; color: #333333; font-family: 'bt-regular-lt', Calibri, Arial, sans-serif; font-size:16px; mso-line-height-rule:exactly; font-weight:200;">Call <a href="tel:+8000123456" style="color: #6400AA">0870 240  5566</a> to pay by phone</td>
+												</tr>											
 											</tbody>
 										</table>
 									</th>
@@ -613,7 +635,15 @@
 					</td>
 				</tr>
 	
-			<!-- /section: section component -->
+		<!-- /section: section component -->			
+			
+			
+			
+			
+			
+			
+			
+			
 		
 		<!-- section: section component -->
 	<tr>
@@ -735,16 +765,18 @@
 									</td>
 								</tr>
 								<tr>
-									<td align="left" valign="top" style="padding: 0 40px 0px 20px; color: #333333; font-family: 'bt-regular-rg', Calibri, Arial, sans-serif; font-size:16px; line-height:1.4; mso-line-height-rule:exactly; font-weight: 400;">
-										<ul style="padding-left: 0px;" class="list-items">
-											<li><a href="" style="color: #6400aa;">pay online</a></li>
-											<li><a href="" style="color: #6400aa;">manage your payment options</a></li>
-											<li><a href="" style="color: #6400aa;">update your billing address</a></li>
-											<li><a href="" style="color: #6400aa;">download a PDF of your bill</a></li>
-											<li><a href="" style="color: #6400aa;">view statements</a></li>
-											<li><a href="" style="color: #6400aa;">view contract terms and end dates</a></li>
-											<li><a href="" style="color: #6400aa;">check your usage</a></li>
-										</ul>	
+									<td align="left" valign="top" style="padding: 0 40px 0px 0; color: #333333; font-family: 'bt-regular-rg', Calibri, Arial, sans-serif; font-size:16px; line-height:1.4; mso-line-height-rule:exactly; font-weight: 400;">
+										<table class="list-items" cellspacing="0" cellpadding="0" border="0">
+											<tr><td colspan="2" style="padding:10px"></td></tr>
+											<tr><td class="list-bullet">&bull;</td><td><a href="" style="color: #6400aa;">pay online</a></td></tr>
+											<tr><td class="list-bullet">&bull;</td><td><a href="" style="color: #6400aa;">manage your payment options</a></td></tr>
+											<tr><td class="list-bullet">&bull;</td><td><a href="" style="color: #6400aa;">update your billing address</a></td></tr>
+											<tr><td class="list-bullet">&bull;</td><td><a href="" style="color: #6400aa;">download a PDF of your bill</a></td></tr>
+											<tr><td class="list-bullet">&bull;</td><td><a href="" style="color: #6400aa;">view statements</a></td></tr>
+											<tr><td class="list-bullet">&bull;</td><td><a href="" style="color: #6400aa;">view contract terms and end dates</a></td></tr>
+											<tr><td class="list-bullet">&bull;</td><td><a href="" style="color: #6400aa;">check your usage</a></td></tr>
+											<tr><td colspan="2" style="padding:10px"></td></tr>
+										</table>	
 									</td>
 								</tr>
 								<tr>

@@ -190,7 +190,9 @@
 			border-radius: 5px;
 		}
 		
-		.list-items li { margin-bottom:5px }
+		.list-items tr { display:block; margin:0; padding:0 0 5px 0 }
+			.list-items td { padding-right:10px }
+			.list-items td.list-bullet { vertical-align:top }
 
 		/* Email, with care */
 
@@ -528,15 +530,19 @@
 								
 								<tr>
 									<td align="left" valign="top" style="padding: 0 40px 0 20px; color: #333333; font-family: 'bt-regular-rg', Calibri, Arial, sans-serif; font-size:16px; line-height:1.4; mso-line-height-rule:exactly; font-weight: 400;">
-										<ul style="padding-left: 16px;" class="list-items">
-											<li>pay online</li>
-											<li>manage your payment options</li>
-											<li>update your billing address</li>
-											<li>download a PDF of your bill</li>
-											<li>view statements</li>
-											<li>view contract terms and end dates</li>
-											<li>check your usage</li>
-										</ul>	
+
+										<table class="list-items" cellspacing="0" cellpadding="0" border="0">
+											<tr><td colspan="2" style="padding:10px"></td></tr>
+											<tr><td class="list-bullet">&bull;</td><td>pay online</td></tr>
+											<tr><td class="list-bullet">&bull;</td><td>manage your payment options</td></tr>
+											<tr><td class="list-bullet">&bull;</td><td>update your billing address</td></tr>
+											<tr><td class="list-bullet">&bull;</td><td>download a PDF of your bill</td></tr>
+											<tr><td class="list-bullet">&bull;</td><td>view statements</td></tr>
+											<tr><td class="list-bullet">&bull;</td><td>view contract terms and end dates</td></tr>
+											<tr><td class="list-bullet">&bull;</td><td>check your usage</td></tr>
+											<tr><td colspan="2" style="padding:10px"></td></tr>
+										</table>
+										
 									</td>
 								</tr>							
 								
