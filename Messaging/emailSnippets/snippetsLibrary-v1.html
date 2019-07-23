@@ -6,7 +6,7 @@
 
 			<meta charset="UTF-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1">
-			<title>Snippets library</title>
+			<title>Email snippet library</title>
 			<link rel="shortcut icon" href="https://business.bt.com/etc/designs/bt/business/favicon.ico" />
 			<style type="text/css">
 				@font-face {
@@ -408,7 +408,8 @@
 					.snippetTypes { padding:20px }
 					.snippetHeader { padding:10px 0 10px 20px; display:inline-block; width:97% }
 						.snippetHeader h2 { line-height:50px; display:inline }
-					.snippetItemList { margin:0; width:170px; padding:10px; border:1px solid #aaa; background-color:#eee; margin:0 20px 20px 0; }
+					ul.snippetItemList { padding:0 }
+					.snippetItemList { width:170px; margin:0 20px 20px 0; }
 					.snippetItemList li { list-style-type:none; border:1px dashed #aaa; background-color:#f5f5f5; text-align:center; padding:10px }
 					.snippetItemList li.generic-shade { background-color:#ddd }
 						.snippetItemList li a { text-decoration:none; color:#6400AA }
@@ -436,17 +437,21 @@
 <a name="topPage"></a>
 
 <div class="snippetHeader">
-	<h2>Email snippets library</h2>
+	<h2>Email snippet library</h2>
 	<img src="https://business.bt.com/content/dam/bt/business/campaign/email/patterns/bt-logo.png" alt="BT" width="64" height="30" style="float:right; background-color:#6400AA; padding:10px; margin-right:10px; border-radius:5px">
 </div>
 
 <br /><br />
 
-<a class="snippetName" name=""><b>Page layout and downloads</b></a>
+<a class="snippetName" name=""><b>Page composition and downloads</b></a>
 
 <div class="snippetTypes">
 
-	<div style="vertical-align:top; display:inline-block">
+	<div style="vertical-align:top; display:inline-block; margin:0 20px 20px 0">
+		<img src="https://raw.githubusercontent.com/EmailMessaging/EmailMessaging.github.io/master/emailSnippets/images/smallpage.png?raw=true" width="146px" />
+	</div>
+
+	<div style="vertical-align:top; display:inline-block; margin:0; padding:0">
 		<ul class="snippetItemList">
 			<li class="generic-shade"><a href="#headerSnippet">Header snippets</a></li>
 			<li><a href="#heroSnippet">Hero snippets</a></li>
@@ -4534,7 +4539,7 @@
 				document.execCommand('copy');
 				return false;
 			});
-			
+
 		});
 
 		window.onbeforeunload = function () {
