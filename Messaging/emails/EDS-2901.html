@@ -20,30 +20,6 @@
 	<meta content="IE=edge" http-equiv="X-UA-Compatible" />
 
 	<style type="text/css">
-		@font-face {
-			font-family: 'bt-regular-bd';
-			src: local('btregularbold'), url('fonts/btfont_bd.woff') format('woff'), url('fonts/btfont_bd.ttf') format('truetype');
-			font-weight: normal !important;
-			font-style: normal !important;
-			mso-font-alt: 'Arial'
-		}
-
-		@font-face {
-			font-family: 'bt-regular-lt';
-			src: local('btregularlt'), url('fonts/btfont_lt.woff') format('woff'), url('fonts/btfont_lt.ttf') format('truetype');
-			font-weight: normal !important;
-			font-style: normal !important;
-			mso-font-alt: 'Arial'
-		}
-
-		@font-face {
-			font-family: 'bt-regular-rg';
-			src: local('btregular'), url('fonts/btfont_rg.woff') format('woff'), url('fonts/btfont_rg.ttf') format('truetype');
-			font-weight: normal !important;
-			font-style: normal !important;
-			mso-font-alt: 'Arial'
-		}
-
 		#outlook a,
 		body {
 			padding: 0;
@@ -78,6 +54,9 @@
 			text-decoration: none;
 			-ms-interpolation-mode: bicubic;
 			height: auto;
+		}
+
+		img {
 			border: none;
 		}
 
@@ -96,25 +75,34 @@
 			line-height: inherit !important;
 		}
 
-		.discount {
-			border: 1px solid #e60050;
-			border-radius: 3px;
-			color: #e60050;
-			padding: 0 18px;
-		}
+		/* FONT INFO BEGIN */
 
-		.highlight {
-			color: #6400aa;
-		}
 
-		.bg-grey-wrap {
-			background: #eeeeee;
-		}
+		@media screen {
+			@font-face {
+				font-family: 'bt-regular-bd';
+				src: local('btregularbold'), url('https://business.bt.com/content/dam/bt/business/campaign/email/patterns/btfont_bd.woff') format('woff'), url('https://business.bt.com/content/dam/bt/business/campaign/email/patterns/btfont_bd.ttf') format('truetype');
+				font-weight: normal !important;
+				font-style: normal !important;
+				mso-font-alt: 'Arial'
+			}
 
-		.bg-grey-wrap td, .pad-me {
-			padding: 10px 0;
-		}
+			@font-face {
+				font-family: 'bt-regular-lt';
+				src: local('btregularlt'), url('https://business.bt.com/content/dam/bt/business/campaign/email/patterns/btfont_lt.woff') format('woff'), url('https://business.bt.com/content/dam/bt/business/campaign/email/patterns/btfont_lt.ttf') format('truetype');
+				font-weight: normal !important;
+				font-style: normal !important;
+				mso-font-alt: 'Arial'
+			}
 
+			@font-face {
+				font-family: 'bt-regular-rg';
+				src: local('btregular'), url('https://business.bt.com/content/dam/bt/business/campaign/email/patterns/btfont_rg.woff') format('woff'), url('https://business.bt.com/content/dam/bt/business/campaign/email/patterns/btfont_rg.ttf') format('truetype');
+				font-weight: normal !important;
+				font-style: normal !important;
+				mso-font-alt: 'Arial'
+			}
+		}
 
 		/*desktopfont update*/
 
@@ -169,7 +157,7 @@
 		}
 
 		h5 {
-			font-family: 'bt-regular-bd', sans-serif;
+			font-family: 'bt-regular-bd', sansarif;
 			font-size: 14px;
 			color: #6400AA;
 		}
@@ -179,7 +167,7 @@
 		}
 
 		P.largep {
-			font-family: 'bt-regular-rg', sans-serif;
+			font-family: 'bt-regular-rg', sansarif;
 			font-size: 20px;
 		}
 
@@ -190,11 +178,15 @@
 		.colImagerc {
 			border-radius: 5px;
 		}
-		
-		.list-items tr { display:block; margin:0; padding:0 0 5px 0 }
-			.list-items td { padding-right:10px }
-			.list-items td.list-bullet { vertical-align:top }
-
+		.discount {
+			border: 1px solid #e60050;
+			border-radius: 3px;
+			color: #e60050;
+			padding: 0 18px;
+		}
+		.highlight {
+			color: #6400aa;
+		}
 		/* Email, with care */
 
 		@media screen and (max-width: 600px) {
@@ -263,6 +255,39 @@
 				width: auto !important;
 				display: table-cell !important;
 				line-height: auto !important;
+			}
+
+			.SCdarkbg {
+				background-image: url('content-tile-dark_MB.gif') !important;
+				background-position: top !important;
+				background-size: cover !important;
+				height: 520px !important;
+			}
+
+			/* Light Content Tile */
+			.SClightbg {
+				background-image: url('content-tile-light_MB.gif') !important;
+				background-position: top !important;
+				background-size: cover !important;
+				height: 520px !important;
+			}
+
+			/* /Background Images */
+
+			/* Light Content Tile */
+			.lightbghr {
+				background-image: url('content-tile-light_MB.jpg') !important;
+				background-position: top !important;
+				background-size: cover !important;
+				height: 600px !important;
+			}
+
+			/* Dark Content Tile ---Height attributed will may have to be editable */
+			.darkbghr {
+				background-image: url('content-tile-dark_MB.jpg') !important;
+				background-position: top !important;
+				background-size: cover !important;
+				height: 519px !important;
 			}
 
 			*.hide {
@@ -376,13 +401,41 @@
 			.phdark {
 				text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3) !important;
 			}
-			
-			.buttonTable { width:100% }
-				.email-btn a { padding:0px !important; display:inline-block }
-			
 		}
 
+
+		/* start Nadeem - new styles - */
+
+		.list-items tr { display:block; font-family: 'bt-regular-rg', Calibri, Arial, sans-serif; margin:0; padding:0 0 5px 0 }
+		.list-items tr td { font-family: 'bt-regular-rg', Calibri, Arial, sans-serif  }
+			.list-items tr td.list-text { font-family: 'bt-regular-rg', Calibri, Arial, sans-serif; font-size:16px; color:#333333 }
+			.list-items tr td.list-text a { text-decoration:underline }
+
+			.list-items td.list-bullet { vertical-align:top }
+			.no-mainimage { width:375px; padding:0 200px 0 0;  }
+
+			a[href^="tel"]{ color:inherit; text-decoration:none; }
+			.blue-text { color: #666666; text-decoration: none; cursor:text }
+			.blue-text-page { color: #333333; text-decoration: none; cursor:text }
+
+		@media screen and (max-width: 600px) {			
+				.buttonTable { width:100% }
+				.email-btn a { padding:0px !important; display:inline-block }
+				.no-mainimage { width:100%; padding:0 }
+				.no-mainimage h1 { width:100% !important }
+				.line-img img { width:53px !important; height:2px }
+		}
+
+		/* end Nadeem - new styles - */
+
+
 	</style>
+
+	<!--[if gte mso 9]>
+		<style type="text/css">
+		h1, h2, h3 { font-family: calibri, arial, sans-serif !important }
+		</style>
+    <![endif]-->
 
 	<!--[if gte mso 9]><xml>
      <o:OfficeDocumentSettings>
@@ -396,47 +449,51 @@
 	<table width="100%" style="margin: 0; table-layout: fixed;" bgcolor="#FAFAFA" border="0" cellspacing="0" cellpadding="0">
 
 		<!-- header -->
-	<tr>
-		<td align="center">
-			<table id="header" role="header" cellpadding="0" cellspacing="0" border="0" width="100%" style="min-width:600px;">
-				<tr>
-					<td valign="top" align="center">
-
-						<table class="wrapper" role="presentation" style="min-width:600px; width: 600px; border-bottom: 1px solid #ffffff;" cellspacing="0" cellpadding="0"
-						width="600" bgcolor="#FFFFFF">
-							<tr>
-								<td>
-									<!-- logo-plain-nav -->
-									<table class="wrapper" role="presentation" style="padding: 0" bgcolor="#6400AA" cellspacing="0" cellpadding="0" width="100%" border="0">
-										<tr>
-											<td class="Hpadding20" style="padding:20px;">
-												<table role="presentation" cellpadding="0" cellspacing="0" border="0" class="fluid">
-													<tr>
-														<td valign="middle">
-															<table role="presentation" cellpadding="0" cellspacing="0" border="0">
-																<tr>
-																	<td width="64" valign="middle" height="30">
-																		<a href="https://business.bt.com/" style="border: none; color: #FFFFFF; font-family: 'bt-regular-bd', Calibri, Arial, sans-serif; font-size: 28px; text-decoration: none;" target="_blank">
-																			<img src="https://business.bt.com/content/dam/bt/business/campaign/email/patterns/bt-logo.png" alt="BT" width="64" height="30" style="display: block;" />
-																		</a>
-																	</td>
-																</tr>
-															</table>
-														</td>
-													</tr>
-												</table>
-											</td>
-										</tr>
-									</table>
-									<!-- /logo-plain-nav -->
-								</td>
-							</tr>
-						</table>
-					</td>
-				</tr>
-			</table>
-		</td>
-	</tr>
+		<tr>
+				<td align="center">
+					<table id="header" role="header" cellpadding="0" cellspacing="0" border="0" width="100%" style="min-width:600px;">
+						<tr>
+							<td valign="top" align="center">
+		
+								<table class="wrapper" role="presentation" style="min-width:600px; width: 600px; border-bottom: 1px solid #ffffff;" cellspacing="0" cellpadding="0"
+								width="600" bgcolor="#FFFFFF">
+									<tr>
+										<td align="left">
+											<!-- logo-plain-nav -->
+											<table class="wrapper" role="presentation" style="padding: 0" bgcolor="#6400AA" cellspacing="0" cellpadding="0" width="100%" border="0">
+												
+												<tr>
+													<td class="Hpadding20" style="padding:20px;">
+														<table role="presentation" cellpadding="0" cellspacing="0" border="0" class="fluid">
+															<tr>
+																<td align="left" valign="middle">
+																	<table role="presentation" cellpadding="0" cellspacing="0" border="0">
+																		<tr>
+																			<td width="64" valign="middle" height="30">
+																				<a href="https://business.bt.com/" style="border: none; color: #FFFFFF; font-family: 'bt-regular-bd', Calibri, Arial, sans-serif; font-size: 28px; text-decoration: none;" target="_blank">
+																					<img src="https://business.bt.com/content/dam/bt/business/campaign/email/patterns/bt-logo.png" alt="BT" width="64" height="30" style="border:0; display: block;" />
+																				</a>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												
+											</table>
+											<!-- /logo-plain-nav -->
+			
+										</td>
+									</tr>
+								</table>
+		
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
 		<!-- /header -->
 
 		<!-- hero component -->
@@ -459,12 +516,17 @@
 																	<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="600" height="203" class="fluid ptb30">
 																		<tbody>
 																			<tr>
-																				<td align="left" valign="middle" style="padding:8px 20px 8px 20px;">
+																				<td align="left" style="font-family: 'bt-regular-lt', Calibri , Arial, sans-serif; padding:0 20px 8px 20px;">
 																					<table border="0" cellpadding="0" cellspacing="0" align="left" style="border: none; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0; mso-table-rspace: 0; table-layout: fixed;" width="100%">
 																						<tbody>
 																							<tr>
-																								<td align="left" height="203" valign="middle" style="font-family: 'bt-regular-lt', Calibri , Arial, sans-serif; color: #ffffff; font-size:36px; line-height:36px; font-weight:100;" class="lead">
-																									Thanks for paying your BT bill
+																								<td style="padding:0 0 10px 0" class="line-img" align="left">
+																									<img src="https://github.com/EmailMessaging/EmailMessaging.github.io/blob/master/emails/images/hero-line.png?raw=true" alt="" width="60px" height="2px"/>
+																								</td>
+																							</tr>
+																							<tr>
+																									<td align="left" class="no-mainimage">
+																									<h1 style="width:375px; font-family: 'bt-regular-lt', Calibri , Arial, sans-serif; color: #FFFFFF; font-size:36px; line-height:36px; font-weight:100;" class="lead">Thanks for paying your BT bill</h1>
 																								</td>
 																							</tr>
 																						</tbody>
@@ -499,12 +561,12 @@
 						<td align="left" bgcolor="#FFFFFF" style="background:#FFFFFF;">
 							<table width="600" class="fluid" style="margin: 0; table-layout: fixed; max-width: 600px; width: 600px;" bgcolor="#FFFFFF" border="0" cellspacing="0" cellpadding="0">
 								<tr>
-									<td align="left" style="padding: 20px 40px 0 20px;">
-										<span style="color: #333333; font-family: 'bt-regular-lt', Calibri, Arial, sans-serif; font-weight: 300; font-size:26px; line-height:30px; mso-line-height-rule:exactly; margin: 0 0 0 0;">
+									<td align="left" style="padding: 20px 20px 0 20px;">
+										<h2 style="color: #333333; font-family: 'bt-regular-lt', Calibri, Arial, sans-serif; font-weight: 300; font-size:26px; line-height:30px; mso-line-height-rule:exactly; margin: 0 0 0 0;">
 											Hello [Title] [Surname]
-										</span><br />
+										</h2><br />
 										<span style="color: #333333; font-family: 'bt-regular-rg', Calibri, Arial, sans-serif; font-size:16px; line-height:21px; mso-line-height-rule:exactly; margin: 0 0 0 0;">
-											<br />Here's your receipt for your <b>[Name]</b> card payment on <b>{DD/MM/YYYY]</b><br /><br />
+											Here's your receipt for your <b>[Name]</b> card payment on <b>[DD/MM/YYYY]</b>
 										</span>
 									</td>
 								</tr>
@@ -530,8 +592,8 @@
 						 width="100%" role="presentation">
 							<tbody>
 								<tr>
-									<td align="left" role="presentation" style="color: #333333; font-family: 'bt-regular-lt', Calibri, Arial, sans-serif; font-size: 26px; line-height: 30px; font-weight: 300; margin: 0; mso-line-height-rule: exactly;">
-										Amount you've paid
+									<td align="left" role="presentation">
+										<h2 style="color: #333333; font-family: 'bt-regular-lt', Calibri, Arial, sans-serif; font-size: 26px; line-height: 30px; font-weight: 300; margin: 0; mso-line-height-rule: exactly;">Amount you've paid</h2>
 									</td>
 								</tr>
 							</tbody>
@@ -554,10 +616,10 @@
 
 				<thead style="border-bottom: 1px solid #333333; width: 600px">
 					<tr style="color: #333333; font-family: 'bt-regular', Calibri, Arial, sans-serif; font-size:16px;  mso-line-height-rule:exactly;">
-						<th align="left" width="380" style="font-weight: 400; background: #eeeeee; padding: 12px 20px;">
+						<th align="left" width="360" style="border-bottom: 1px solid #333333; font-weight: 400; background: #eeeeee; padding: 12px 20px;">
 							Billing account
 						</th>
-						<th align="right" width="160" style="font-weight: 400; background: #eeeeee; padding: 12px 20px;">
+						<th align="right" width="160" style="border-bottom: 1px solid #333333; font-weight: 400; background: #eeeeee; padding: 12px 20px;">
 							Payment
 						</th>
 					</tr>
@@ -570,7 +632,7 @@
 						<td width="160" style="border-bottom: 1px solid #dddddd; padding:15px 20px; font-size:16px;" align="right" valign="top">£XX.XX</td>
 					</tr>
 					<tr style="border-bottom: 1px solid #dddddd; color: #333333; font-family: 'bt-regular', Calibri, Arial, sans-serif; font-size:14px;  mso-line-height-rule:exactly;">
-						<td width="380" align="left" valign="top" style="border-bottom: 1px solid #dddddd; padding: 15px 0 8px 20px; background: #ffffff;  font-weight: 900;">
+						<td width="360" align="left" valign="top" style="border-bottom: 1px solid #dddddd; padding: 15px 0 8px 20px; background: #ffffff;  font-weight: 900;">
 							[MaskedBillingAccountNumber2]
 						</td>
 						<td width="160" style="border-bottom: 1px solid #dddddd; padding:15px 20px; font-size:16px;" align="right" valign="top">£XX.XX</td>
@@ -617,10 +679,7 @@
 	</tr>
 
 		
-		<!-- /section: section component -->
-		
-
-	
+	<!-- /section: section component -->
 	
 	
 	<!-- section: section component -->
@@ -633,35 +692,30 @@
 							<td valign="middle" align="center" bgcolor="#FAFAFA" style="padding: 0 0 0 0; background:#FAFAFA;">
 								<table class="wrapper" role="presentation" style="min-width:600px; width: 600px;" cellspacing="0" cellpadding="0" border="0" width="600" bgcolor="#eeeeee">
 									<tbody>
-
+		
+		
 										<tr>
-											<td align="center" style="background-color:#ffffff; padding:20px">
-												<table bgcolor="#eeeeee" border="0"  class="fluid" width="560" cellpadding="0" cellspacing="0" style="border-radius:5px; border: none; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0; mso-table-rspace: 0; table-layout: fixed;">
-													<tbody>
-														<tr>
-															<td align="left" valign="top" style="padding: 20px; color: #333333; font-family: 'bt-regular-lt', Calibri, Arial, sans-serif; font-size:26px; line-height:26px; mso-line-height-rule:exactly; font-weight: 300;">
-															Payment details
-															</td>
-														</tr>
-														<tr>
-															<td align="left" valign="top" style="padding: 0 0 10px 20px; color: #333333; font-family: 'bt-regular-rg', Calibri, Arial, sans-serif; font-size:16px; line-height:1.4; mso-line-height-rule:exactly; font-weight: 400;">
-																Payment reference number: <b>[PaymentReferenceNumber]</b>
-															</td>
-														</tr>
-														<tr>
-															<td align="left" valign="top" style="padding: 0 0 10px 20px; color: #333333; font-family: 'bt-regular-rg', Calibri, Arial, sans-serif; font-size:16px; line-height:1.4; mso-line-height-rule:exactly; font-weight: 400;">
-																Payment received: <b>DD/MM/YYYY</b> at <b>HH:MM</b> 
-															</td>
-														</tr>
-														<tr>
-															<td align="left" valign="top" style="padding: 0 0 20px 20px; color: #333333; font-family: 'bt-regular-rg', Calibri, Arial, sans-serif; font-size:16px; line-height:1.4; mso-line-height-rule:exactly; font-weight: 400;">
-																Payment card: Card number ending in <b>[XXXX]</b>
-															</td>
-														</tr>
-													</tbody>
-												</table>
-											</td>
-										</tr>
+												<td align="center" style="background-color:#ffffff; padding:20px">
+													<table bgcolor="#eeeeee" border="0"  class="fluid" width="560" cellpadding="0" cellspacing="0" style="border-radius:5px; border: none; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0; mso-table-rspace: 0; table-layout: fixed;">
+														<tbody>
+		
+															<tr>
+																	<td align="left" valign="top" style="padding:20px">
+																		<h3 style="padding:0; margin:0; color:#333333; font-family: 'bt-regular-lt', Calibri, Arial, sans-serif; font-size:26px; line-height:26px; mso-line-height-rule:exactly; font-weight: 300;">Payment details</h3><br />
+																		<span style="color: #333333; font-family: 'bt-regular-rg', Calibri, Arial, sans-serif; font-size:16px; line-height:1.4; mso-line-height-rule:exactly; font-weight: 400;">
+																			Payment reference number: <b>[PaymentReferenceNumber]</b><br />
+																			Payment received: <b>DD/MM/YYYY</b> at <b>HH:MM</b> <br />
+																			Payment card: Card number ending in <b>[XXXX]</b><br />
+																		</span>
+																	</td>
+																</tr>
+		
+														</tbody>
+													</table>
+												</td>
+											</tr>
+		
+		
 										
 									</tbody>
 								</table>
@@ -670,7 +724,7 @@
 					</tbody>
 				</table>
 			</td>
-		</tr>	
+		</tr>
 		
 		<!-- /section: section component -->
 		
@@ -688,12 +742,12 @@
 								<tbody>
 									<tr>
 										<td align="left" valign="top" style="padding: 0 40px 20px 0px; color: #333333; font-family: 'bt-regular-rg', Calibri, Arial, sans-serif; font-size:16px; line-height:1.4; mso-line-height-rule:exactly; font-weight: 400;">
-											You can see details of all your bills in <a href="/my-account/" style="color: #6400aa;">My Account.</a>
+											You can see details of all your bills in <a href="/my-account/" style="color: #6400aa; text-decoration:underline">My Account.</a>
 										</td>
 									</tr>
 									<tr>
 										<td align="left" valign="top" style="padding: 0 40px 20px 0px; color: #333333; font-family: 'bt-regular-rg', Calibri, Arial, sans-serif; font-size:16px; line-height:1.4; mso-line-height-rule:exactly; font-weight: 400;">
-											To see details of al your bills online, simply <a href="/my-account/" style="color: #6400aa;">register for My Account.</a>
+											To see details of al your bills online, simply <a href="/my-account/" style="color: #6400aa; text-decoration:underline">register for My Account.</a>
 										</td>
 									</tr>									
 								</tbody>
@@ -714,11 +768,7 @@
 						<table border="0" bgcolor="#ffffff" class="fluid" width="600" cellpadding="0" cellspacing="0" style="border: none; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0; mso-table-rspace: 0; table-layout: fixed; box-sizing: border-box;">
 						<tbody>
 							<tr>
-								<td style="padding:10px"></td>
-							</tr>	
-							
-							<tr>
-								<td align="center" style="padding:0 20px; 0">
+								<td align="center" style="padding:0 20px">
 									<table border="0" cellpadding="0" cellspacing="0" align="left" style="border: none; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0; mso-table-rspace: 0; table-layout: fixed;" width="100%" role="presentation">
 										<tbody>
 											<tr>
@@ -726,14 +776,14 @@
 											</tr>	
 											
 											<tr>
-												<td align="left"  role="presentation" style="padding-top:20px; color: #333333; font-family: 'bt-regular-lt', Calibri, Arial, sans-serif; font-size: 26px; line-height: 30px; font-weight: 300; margin: 0; mso-line-height-rule: exactly;">
-													Pay by Direct Debit
+												<td align="left" role="presentation" style="padding:20px 0 0 0">
+													<h2 style="color: #333333; font-family: 'bt-regular-lt', Calibri, Arial, sans-serif; font-size: 26px; line-height: 30px; font-weight: 300; margin: 0; mso-line-height-rule: exactly;">Pay by Direct Debit</h2>
 												</td>
 											</tr>
 												
 											</tbody>
 										</table>
-									</th>
+									</td>
 								</tr>	
 																
 											
@@ -754,7 +804,7 @@
 														<table cellspacing="0" cellpadding="0" class="buttonTable" align="left">
 															<tr>
 																<td class="email-btn" align="center" height="40" bgcolor="#6400aa" style="border-radius: 5px; color: #FFFFFF; display: block; border:solid 1px #6400AA; padding:0 20px">
-																	<a href="#" style="font-family: 'bt-regular-rg', Calibri , Arial, sans-serif; font-size:16px; text-decoration: none; line-height:40px; width:100%; display:inline-block">
+																	<a href="https://url" style="font-family: 'bt-regular-rg', Calibri , Arial, sans-serif; font-size:16px; text-decoration: none; line-height:40px; width:100%; display:inline-block">
 																		<span style="color: #FFFFFF">Set up a Direct Debit</span>
 																	</a>
 																</td>
@@ -788,7 +838,7 @@
 							<tbody>
 							
 							<tr>
-								<td align="center" style="padding:20px 20px 0;">
+								<td align="center" style="padding:0 20px 0;">
 									<table border="0" cellpadding="0" cellspacing="0" align="left" style="border: none; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0; mso-table-rspace: 0; table-layout: fixed;" width="100%" role="presentation">
 										<tbody>
 											<tr>
@@ -796,14 +846,14 @@
 											</tr>	
 											
 											<tr>
-												<td align="left"  role="presentation" style="padding-top:20px; color: #333333; font-family: 'bt-regular-lt', Calibri, Arial, sans-serif; font-size: 26px; line-height: 30px; font-weight: 300; margin: 0; mso-line-height-rule: exactly;">
-													Switch to paper-free billing
+												<td align="left"  role="presentation" style="padding:20px 0 0 0">
+													<h2 style="color: #333333; font-family: 'bt-regular-lt', Calibri, Arial, sans-serif; font-size: 26px; line-height: 30px; font-weight: 300; margin: 0; mso-line-height-rule: exactly;">Switch to paper-free billing</h2>
 												</td>
 											</tr>
 												
 											</tbody>
 										</table>
-									</th>
+									</td>
 								</tr>	
 																
 											
@@ -824,7 +874,7 @@
 														<table cellspacing="0" cellpadding="0" class="buttonTable" align="left">
 															<tr>
 																<td class="email-btn" align="center" height="40" bgcolor="#6400aa" style="border-radius: 5px; color: #FFFFFF; display: block; border:solid 1px #6400AA; padding:0 20px">
-																	<a href="#" style="font-family: 'bt-regular-rg', Calibri , Arial, sans-serif; font-size:16px; text-decoration: none; line-height:40px; width:100%; display:inline-block">
+																	<a href="https://url" style="font-family: 'bt-regular-rg', Calibri , Arial, sans-serif; font-size:16px; text-decoration: none; line-height:40px; width:100%; display:inline-block">
 																		<span style="color: #FFFFFF">Switch to paper-free billing</span>
 																	</a>
 																</td>
@@ -887,59 +937,102 @@
 		
 
 		<!-- section: section component -->
+
+
 	<tr>
-		<td align="center">
-			<table class="section" cellpadding="0" cellspacing="0" border="0" width="100%">
-				<tbody>
-					<tr>
-						<td valign="middle" align="center" bgcolor="#FAFAFA" style="padding: 0 0 0 0; background:#FAFAFA;">
-							<table class="wrapper" role="presentation" style="min-width:600px; width: 600px;" cellspacing="0" cellpadding="0" border="0" width="600" bgcolor="#dddddd">
-								<tbody>
-									<tr>
-										<td align="center">
-											<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-												<tbody>
-													<tr>
-														<td align="center" valign="middle">
-															<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="300" class="fluid ptb30">
-																<tbody>
-																	<tr>
-																		<td align="left" style="padding:8px 20px 8px 20px;">
-																			<table border="0" cellpadding="0" cellspacing="0" align="left" style="border: none; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0; mso-table-rspace: 0; table-layout: fixed;" width="100%">
-																				<tbody>
-																					<tr>
-																						<td align="left" style="font-family: 'bt-regular-lt', Calibri, Arial, sans-serif; color: #333333; font-size:26px; line-height:30px;" class="lead">
-																							On the go access in the BT Business app 
-																						</td>
-																					</tr>
-																				</tbody>
-																			</table>
-																		</td>
-																	</tr>
-																</tbody>
-															</table>
-														</td>
-														<td class="hide" align="center" width="300" height="203" valign="TOP">							
-															<img class="hide" src="http://www.bt.com/ext/static/wa/kci/btbusiness/App_teaser_Desktop_BT_Business_App@1x.png" alt="Easy on the go access in the BT Business app" style="display:block; border:none; font-family: arial, helvetica, sans-serif; font-size: 18px; line-height:1.3em; color:#6400AA; text-decoration:none; font-weight:bold; text-align: center; background-color: #D8D8D8;" width="300" height="auto">
-														</td>
-													</tr>
-												</tbody>
-											</table>
-										</td>
-									</tr>
-									<tr>
-										<td class="show" style="padding:0; display:none; height:0; font-size:0; line-height:0;" align="center">
-											<img class="show alt serif" src="http://www.bt.com/ext/static/wa/kci/btbusiness/App_teaser_Desktop_BT_Business_App@2x.png" alt="Easy on the go access in the BT Business app" style="display:none; border:none; width:0; height:0;" width="300" height="auto">				
-										</td>
-									</tr>					
-								</tbody>
-							</table>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</td>
-	</tr>
+			<td align="center">
+				<table class="section" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tbody>
+						<tr>
+							<td valign="middle" align="center" bgcolor="#FAFAFA" style="padding: 0 0 0 0; background:#FAFAFA;">
+								<table class="wrapper" role="presentation" style="min-width:600px; width: 600px;" cellspacing="0" cellpadding="0" border="0" width="600" bgcolor="#dddddd">
+									<tbody>
+										<tr>
+											<td align="center">
+												<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+													<tbody>
+														<tr>
+															<td align="center" valign="middle">
+																<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="300" class="fluid ptb30">
+																	<tbody>
+																		<tr>
+																			<td align="left" style="padding:8px 10px 0px 20px;">
+																				<table border="0" cellpadding="0" cellspacing="0" align="left" style="border: none; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0; mso-table-rspace: 0; table-layout: fixed;" width="100%">
+																					<tbody>
+																						<tr>
+																							<td align="left" style="font-family: 'bt-regular-lt', Calibri, Arial, sans-serif; color: #333333; mso-line-height-rule:exactly; width:100%" class="lead">
+																								<h2 style="font-weight:300; font-size:22px; line-height:26px; mso-line-height-rule:exactly; ">On the go access in the BT Business app </h2>
+																							</td>
+																						</tr>
+	
+																						<tr>
+																							<td class="show" style="padding:20px 0  0 0; display:none; height:0; font-size:0; line-height:0;" colspan="2" align="center">
+																								<img class="show alt serif" src="https://github.com/EmailMessaging/EmailMessaging.github.io/blob/master/emails/images/EDS-2900-Usage-Checker.png?raw=true" alt="Keep track of your data the easy way with our online tool" style="display:none; border:none">		
+																							</td>
+																						</tr>
+																						
+																						<tr>
+																							<td align="left" valign="top">
+																								<table class="fluid" style="margin: 0; table-layout: fixed;" border="0" cellspacing="0" cellpadding="0">			
+																									<tr>
+																										<td align="left" style="padding:20px 0 0;">
+																											<table border="0" cellpadding="0" cellspacing="0" align="left" style="border: none; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0; mso-table-rspace: 0; table-layout: fixed;" width="100%" role="presentation">
+																												<tbody>
+	
+																													<tr>
+																														<td align="left" height="40" style="padding:0; margin:0">
+																															<table cellspacing="0" cellpadding="0" class="buttonTable" align="left">
+																																<tr>
+																																	<td class="email-btn" align="center" valign="middle" height="40" bgcolor="#6400aa" style="border-radius: 5px; color: #FFFFFF; display: block; padding:0 20px">
+																																		<a href="https://url" class="emailBtn" style="font-family: 'bt-regular-rg', Calibri , Arial, sans-serif; font-size:16px; text-decoration: none; line-height:40px; width:100%; mso-line-height-rule:exactly; display:inline-block">
+																																			<span style="color: #FFFFFF; font-family: 'bt-regular-rg', Calibri , Arial, sans-serif; font-size:16px; text-decoration: none; line-height:40px; width:100%; mso-line-height-rule:exactly; display:inline-block">More about the app</span>
+																																		</a>
+																																	</td>
+																																</tr>
+																															</table>
+																														</td>
+																													</tr>	
+																													
+																												</tbody>
+																											</table>
+																										</td>
+																									</tr>
+																									
+																								</table>
+																							</td>
+																						</tr>
+	
+																					</tbody>
+																				</table>
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</td>
+															<td class="hide" align="center" width="300" valign="TOP">							
+																<img class="hide" src="http://www.bt.com/ext/static/wa/kci/btbusiness/App_teaser_Desktop_BT_Business_App@1x.png" alt="Easy on the go access in the BT Business app" style="display:block; border:none; font-family: arial, helvetica, sans-serif; font-size: 18px; line-height:1.3em; color:#6400AA; text-decoration:none; font-weight:bold; text-align: center; background-color: #D8D8D8;" width="300" height="auto">
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+										</tr>					
+									</tbody>
+								</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+	
+
+
+
+
+
+
+
 		<!-- /section: section component -->
 
 		<!-- section: section component -->
@@ -948,22 +1041,20 @@
 			<td align="center">
 				<table width="600" class="fluid" style="margin: 0; table-layout: fixed; max-width: 600px; width: 600px;" bgcolor="#FFFFFF" border="0" cellspacing="0" cellpadding="0">
 					<tr>
-						<td align="left" style="padding: 0 20px 0; font-family: 'bt-regular-rg', Calibri, Arial, sans-serif; color: #333333; font-size:16px;line-height:21px;">
+						<td align="left" style="padding: 20px 20px 0; font-family: 'bt-regular-rg', Calibri, Arial, sans-serif; color: #333333; font-size:16px;line-height:21px;">
 						
 							<table class="list-items" cellspacing="0" cellpadding="0" border="0">
-								<tr><td colspan="2" style="padding:10px"></td></tr>
-								<tr><td class="list-bullet">&bull;</td><td>Track your order</td></tr>
-								<tr><td class="list-bullet">&bull;</td><td>Instantly see your bills</td></tr>
-								<tr><td class="list-bullet">&bull;</td><td>Get updates on service and usage</td></tr>
-								<tr><td class="list-bullet">&bull;</td><td>Give wi-fi to your guests</td></tr>
-								<tr><td class="list-bullet">&bull;</td><td>Get in touch with us</td></tr>
-								<tr><td colspan="2" style="padding:10px"></td></tr>
-							</table>				
+									<tr><td align="left" valign="top" class="list-bullet">&bull;</td><td class="list-text" align="left" style="padding:0 0 0 10px">Track your order</td></tr>
+									<tr><td align="left" valign="top" class="list-bullet">&bull;</td><td class="list-text" align="left" style="padding:0 0 0 10px">Instantly see your bills</td></tr>
+									<tr><td align="left" valign="top" class="list-bullet">&bull;</td><td class="list-text" align="left" style="padding:0 0 0 10px">Get updates on service and usage</td></tr>
+									<tr><td align="left" valign="top" class="list-bullet">&bull;</td><td class="list-text" align="left" style="padding:0 0 0 10px">Give wi-fi to your guests</td></tr>
+									<tr><td align="left" valign="top" class="list-bullet">&bull;</td><td class="list-text" align="left" style="padding:0 0 0 10px">Get in touch with us</td></tr>
+							</table><br />			
 							
 							<a href="/more-about-the-app-link/" style="color: #6400AA; font-family: 'bt-regular-rg', Calibri, Arial, sans-serif; font-size: 16px; padding: 0px 20px 0 0; text-decoration: none; ">
 								More about the app
 								<span class="arrow">
-									<img src="https://business.bt.com/content/dam/bt/business/campaign/email/patterns/cta-arrow-purple.png" width="11" height="8" style="color: #6400AA; width:11px; height:8px;" alt="→">
+									<img src="https://business.bt.com/content/dam/bt/business/campaign/email/patterns/cta-arrow-purple.png" width="11" height="8" style="border:0; color: #6400AA; width:11px; height:8px;" alt="→">
 								</span>
 							</a>
 						</td>
@@ -980,8 +1071,8 @@
 	
 							<table width="100%" class="fluid" style="color:#333333; font-family: 'bt-regular-rg', Calibri, Arial, sans-serif; font-size:16px; line-height:21px; margin: 0; mso-line-height-rule: exactly; table-layout: fixed; width: 100%;" bgcolor="#FFFFFF" border="0" cellspacing="0" cellpadding="0">
 								<tr>
-									<td>
-										You can download the app from the App Store or Google Play today. Or text <b>App</b> to <b>81192</b> to download
+									<td align="left" style="color:#333333; font-family: 'bt-regular-rg', Calibri, Arial, sans-serif; font-size:16px;">
+										You can download the app from the App Store or Google Play <a class="blue-text-page" style="color: #333333; text-decoration: none; cursor:text">today.</a> Or text <b>App</b> to <b>81192</b> to download
 										it straight to your device.
 									</td>
 								</tr>
@@ -1022,58 +1113,59 @@
 		
 		
 
-		<!-- footer -->	
+		<!-- footer -->
 		<tr>
 			<td align="center">
 				<!-- purple-footer -->	
 				<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="600" bgcolor="#6400AA" style="min-width:600px; width: 600px;" class="wrapper">
-					<tbody>
-						<tr>
-							<td style="padding: 10px 20px;" valign="middle" align="left">
-								<!-- footer-nav -->
-								<table border="0" cellpadding="0" cellspacing="0" align="left" style="height: 40px; border: none; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0; mso-table-rspace: 0; table-layout: fixed;">
-									<tbody>
-										<tr>
-											<td width="36%" style="font-family: 'bt-regular-lt', Calibri, Arial, sans-serif; font-size:16px; color: #ffffff;" align="left" valign="middle">
-												<a href="/help-centre-link/" style="font-size: 18px; color: #ffffff; text-decoration: none; line-height: 1em;">Help centre</a>
-											</td>
-											<td width="31%" style="font-family: 'bt-regular-lt', Calibri, Arial, sans-serif; font-size:16px; color: #ffffff;" align="left" valign="middle">
-												<a href="/live-chat-link/" style="font-size: 18px; color: #ffffff; text-decoration: none; line-height: 1em;">Live chat</a>
-											</td>
-											<td width="33%" style="font-family: 'bt-regular-lt', Calibri, Arial, sans-serif; font-size:16px;" align="left" valign="middle">
-												<a href="tel:+8000113237" style="color: #ffffff; text-decoration: none; white-space: nowrap">0800 011 3237</a>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-				<!-- /purple-footer -->
-				<!-- block-grey -->
-				<table width="600" class="fluid" style="margin: 0; table-layout: fixed; max-width: 600px; width: 600px;" cellpadding="0" cellspacing="0" border="0" bgcolor="#eee">
-					<tbody>
-						<tr>
-							<td style="padding: 20px 40px 20px 20px; background-color:#eee; color: #666666; font-family: 'bt-regular-rg', Calibri, Arial, sans-serif; font-size: 16px; line-height: 19px; mso-line-height-rule: exactly;">
-								© British Telecommunications plc, Registered office: 81 Newgate Street, London <span style="white-space: nowrap">EC1A 7AJ</span>. Registered in England no: 1800000
-								<br> <br>
-								All this information was correct on the date we sent this email.
-								<br> <br>
-								<a href="/privacy-policy-link/" style="color: #6400AA; font-family: 'bt-regular-rg', Calibri, Arial, sans-serif; font-size: 16px; padding: 0px 20px 0 0; text-decoration: none; ">
-									Privacy Policy
-									<span class="arrow">
-										<img src="https://business.bt.com/content/dam/bt/business/campaign/email/patterns/cta-arrow-purple.png" width="11" height="8" style="color: #6400AA; width:11px; height:8px;" alt="→">
-									</span>
-								</a>
-							</td>
-						</tr>
-					</tbody>
-				</table>
+						<tbody>
+							<tr>
+								<td style="padding: 10px 20px;" align="left">
+									<!-- footer-nav -->
+									<table border="0" cellpadding="0" cellspacing="0" align="left" style="height: 40px; border: none; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0; mso-table-rspace: 0; table-layout: fixed;">
+										<tbody>
+											<tr>
+												<td style="padding:0 40px 0 0; margin:0; font-family: 'bt-regular-lt', Calibri, Arial, sans-serif; font-size:16px; color: #ffffff;" align="left">
+													<a href="https://url" style="font-size: 18px; color: #ffffff; text-decoration: none; line-height: 1em;">Help centre</a>
+												</td>
+												<td style="padding:0 40px 0 0; margin:0; font-family: 'bt-regular-lt', Calibri, Arial, sans-serif; font-size:16px; color: #ffffff;" align="left">
+													<a href="https://url" style="font-size: 18px; color: #ffffff; text-decoration: none; line-height: 1em;">Live chat</a>
+												</td>
+												<td style="padding:0; margin:0; font-family: 'bt-regular-lt', Calibri, Arial, sans-serif; font-size:16px;" align="left">
+													<a href="tel:+8000113237" style="color: #ffffff; text-decoration: none; white-space: nowrap">0800 011 3237</a>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<!-- /purple-footer -->
+					<!-- block-grey -->
+					<table width="600" class="fluid" style="margin: 0; table-layout: fixed; max-width: 600px; width: 600px;" cellpadding="0" cellspacing="0" border="0" bgcolor="#eee">
+						<tbody>
+							<tr>
+								<td align="left" style="padding: 20px 40px 20px 20px; background-color:#eee; color: #666666; font-family: 'bt-regular-rg', Calibri, Arial, sans-serif; font-size: 16px; line-height: 19px; mso-line-height-rule: exactly;">
+									<a href="https://url" style="color: #6400AA; font-family: 'bt-regular-rg', Calibri, Arial, sans-serif; font-size: 16px; padding: 0px 20px 0 0; text-decoration: none; ">
+										Privacy Policy
+										<span class="arrow">
+											<img src="https://business.bt.com/content/dam/bt/business/campaign/email/patterns/cta-arrow-purple.png" width="11" height="8" style="border:0; color: #6400AA; width:11px; height:8px;" alt="→">
+										</span>
+									</a>
+									<br> <br>
+									© British Telecommunications plc, Registered office: <a class="blue-text" style="color: #666666; text-decoration: none; cursor:text">81 Newgate Street, London</a> <span style="white-space: nowrap">EC1A 7AJ</span>. Registered in England no: 1800000
+									<br> <br>
+									All this information was correct on the date we sent this email.
+									<br> <br>
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				<!-- /block-grey -->
 			</td>
 		</tr>
-		<!-- footer -->
+		<!-- /footer -->
 
 	</table>
 </body>
