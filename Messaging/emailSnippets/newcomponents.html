@@ -8,22 +8,44 @@
 			<meta name="viewport" content="width=device-width, initial-scale=1">
 			<title>Email snippet library ( v1.1 ) : revised and new components</title>
 			<link rel="shortcut icon" href="https://business.bt.com/etc/designs/bt/business/favicon.ico" />
-
-
 			<style type="text/css">
+				@font-face {
+					font-family: 'bt-regular-bd';
+					src: local('btregularbold'), url('fonts/btfont_bd.woff') format('woff'), url('fonts/btfont_bd.ttf') format('truetype');
+					font-weight: normal !important;
+					font-style: normal !important;
+					mso-font-alt: 'Arial'
+				}
+
+				@font-face {
+					font-family: 'bt-regular-lt';
+					src: local('btregularlt'), url('fonts/btfont_lt.woff') format('woff'), url('fonts/btfont_lt.ttf') format('truetype');
+					font-weight: normal !important;
+					font-style: normal !important;
+					mso-font-alt: 'Arial'
+				}
+
+				@font-face {
+					font-family: 'bt-regular-rg';
+					src: local('btregular'), url('fonts/btfont_rg.woff') format('woff'), url('fonts/btfont_rg.ttf') format('truetype');
+					font-weight: normal !important;
+					font-style: normal !important;
+					mso-font-alt: 'Arial'
+				}		
+			
 				#outlook a,
 				body {
 					padding: 0;
 				}
-		
+
 				body {
 					margin: 0;
 				}
-		
+
 				.ExternalClass {
 					width: 100% !important
 				}
-		
+
 				.ExternalClass,
 				.ExternalClass p,
 				.ExternalClass span,
@@ -32,31 +54,28 @@
 				.ExternalClass div {
 					line-height: 100%;
 				}
-		
+
 				#backgroundtable {
 					margin: 0;
 					padding: 0;
 					width: 100% !important;
 					line-height: 100% !important;
 				}
-		
+
 				img {
 					outline: none;
 					text-decoration: none;
 					-ms-interpolation-mode: bicubic;
 					height: auto;
-				}
-		
-				img {
 					border: none;
 				}
-		
+
 				table td {
 					border-collapse: collapse;
 					mso-table-lspace: 0;
 					mso-table-rspace: 0;
 				}
-		
+
 				a[x-apple-data-detectors] {
 					color: inherit !important;
 					text-decoration: none !important;
@@ -65,38 +84,28 @@
 					font-weight: inherit !important;
 					line-height: inherit !important;
 				}
-		
-				/* FONT INFO BEGIN */
-		
-		
-				@media screen {
-					@font-face {
-						font-family: 'bt-regular-bd';
-						src: local('btregularbold'), url('https://business.bt.com/content/dam/bt/business/campaign/email/patterns/btfont_bd.woff') format('woff'), url('https://business.bt.com/content/dam/bt/business/campaign/email/patterns/btfont_bd.ttf') format('truetype');
-						font-weight: normal !important;
-						font-style: normal !important;
-						mso-font-alt: 'Arial'
-					}
-		
-					@font-face {
-						font-family: 'bt-regular-lt';
-						src: local('btregularlt'), url('https://business.bt.com/content/dam/bt/business/campaign/email/patterns/btfont_lt.woff') format('woff'), url('https://business.bt.com/content/dam/bt/business/campaign/email/patterns/btfont_lt.ttf') format('truetype');
-						font-weight: normal !important;
-						font-style: normal !important;
-						mso-font-alt: 'Arial'
-					}
-		
-					@font-face {
-						font-family: 'bt-regular-rg';
-						src: local('btregular'), url('https://business.bt.com/content/dam/bt/business/campaign/email/patterns/btfont_rg.woff') format('woff'), url('https://business.bt.com/content/dam/bt/business/campaign/email/patterns/btfont_rg.ttf') format('truetype');
-						font-weight: normal !important;
-						font-style: normal !important;
-						mso-font-alt: 'Arial'
-					}
+
+				.discount {
+					border: 1px solid #e60050;
+					border-radius: 3px;
+					color: #e60050;
+					padding: 0 18px;
 				}
-		
+
+				.highlight {
+					color: #6400aa;
+				}
+
+				.bg-grey-wrap {
+					background: #eeeeee;
+				}
+
+				.bg-grey-wrap td, .pad-me {
+					padding: 10px 0;
+				}
+
 				/*desktopfont update*/
-		
+
 				h1,
 				h2,
 				h3,
@@ -105,99 +114,95 @@
 				p {
 					margin: 0 0 0 0;
 				}
-		
+
 				h1,
 				h2,
 				h3 {
 					font-family: 'bt-regular-lt', 'Calibri', 'Arial'sans-serif;
 					color: #333333;
 				}
-		
+
 				h4,
 				p {
 					font-family: 'bt-regular-rg', 'Calibri', 'Arial'sans-serif;
 					font-weight: normal;
 				}
-		
+
 				p>strong {
 					font-family: 'bt-regular-bd', 'Calibri', 'Arial'sans-serif;
 				}
-		
+
 				p>b {
 					font-family: 'bt-regular-bd', 'Calibri', 'Arial'sans-serif;
 				}
-		
+
 				.lead {
 					font-size: 36px;
 				}
-		
+
 				h1 {
 					font-size: 32px;
 				}
-		
+
 				h2 {
 					font-size: 26px;
 				}
-		
+
 				h3 {
 					font-size: 22px;
 				}
-		
+
 				h4 {
 					font-size: 20px;
 				}
-		
+
 				h5 {
-					font-family: 'bt-regular-bd', sansarif;
+					font-family: 'bt-regular-bd', sans-serif;
 					font-size: 14px;
 					color: #6400AA;
 				}
-		
+
 				p {
 					font-size: 16px;
 				}
-		
+
 				P.largep {
-					font-family: 'bt-regular-rg', sansarif;
+					font-family: 'bt-regular-rg', sans-serif;
 					font-size: 20px;
 				}
-		
+
 				P.notes {
 					font-size: 14px;
 				}
-		
+
 				.colImagerc {
 					border-radius: 5px;
 				}
-				.discount {
-					border: 1px solid #e60050;
-					border-radius: 3px;
-					color: #e60050;
-					padding: 0 18px;
-				}
-				.highlight {
-					color: #6400aa;
-				}
+				
+				.list-items tr { display:block; margin:0; padding:0 0 5px 0 }
+					.list-items td { padding-right:10px }
+					.list-items td.list-bullet { vertical-align:top }
+
 				/* Email, with care */
-		
+
 				@media screen and (max-width: 600px) {
-		
+
 					/* Standard classes */
 					#backgroundtablel,
 					#header {
 						min-width: 200px !important;
 					}
-		
+
 					table.section {
 						width: 100% !important;
 					}
-		
+
 					table.wrapper {
 						width: 100% !important;
 						max-width: 600px !important;
 						min-width: 200px !important;
 					}
-		
+
 					*.fluid,
 					*.w320 {
 						width: 100% !important;
@@ -206,14 +211,14 @@
 						max-width: 100% !important;
 						min-width: 100% !important;
 					}
-		
+
 					img.resize,
 					img.w300 {
 						width: 100% !important;
 						height: auto !important;
 						display: block !important;
 					}
-		
+
 					img.alt {
 						line-height: 1.3em !important;
 						color: #000001 !important;
@@ -221,40 +226,40 @@
 						font-weight: bold !important;
 						text-align: center !important;
 					}
-		
+
 					img.serif {
 						font-family: Georgia, 'Times New Roman', Times, serif !important;
 						font-size: 18px !important;
 					}
-		
+
 					img.sans-serif {
 						font-family: arial, helvetica, sans-serif !important;
 						font-size: 14px !important;
 					}
-		
+
 					.breakme {
 						display: block !important;
 						width: 100% !important
 					}
-		
+
 					th.breakmeevent {
 						display: block !important;
 						width: 85% !important
 					}
-		
+
 					td.showpt {
 						width: auto !important;
 						display: table-cell !important;
 						line-height: auto !important;
 					}
-		
+
 					.SCdarkbg {
 						background-image: url('content-tile-dark_MB.gif') !important;
 						background-position: top !important;
 						background-size: cover !important;
 						height: 520px !important;
 					}
-		
+
 					/* Light Content Tile */
 					.SClightbg {
 						background-image: url('content-tile-light_MB.gif') !important;
@@ -262,9 +267,7 @@
 						background-size: cover !important;
 						height: 520px !important;
 					}
-		
-					/* /Background Images */
-		
+
 					/* Light Content Tile */
 					.lightbghr {
 						background-image: url('content-tile-light_MB.jpg') !important;
@@ -272,7 +275,7 @@
 						background-size: cover !important;
 						height: 600px !important;
 					}
-		
+
 					/* Dark Content Tile ---Height attributed will may have to be editable */
 					.darkbghr {
 						background-image: url('content-tile-dark_MB.jpg') !important;
@@ -280,13 +283,13 @@
 						background-size: cover !important;
 						height: 519px !important;
 					}
-		
+
 					*.hide {
 						display: none !important;
 						width: 0 !important;
 						height: 0 !important;
 					}
-		
+
 					*.show {
 						float: none !important;
 						height: auto !important;
@@ -295,136 +298,109 @@
 						width: auto !important;
 						font-size: inherit !important;
 					}
-		
-		
+
 					tr.show {
 						display: table-row !important;
 					}
-		
+
 					td.show {
 						display: table-cell !important;
 					}
-		
+
 					img.show {
 						width: 100% !important;
 						height: auto !important;
 						display: block !important;
 					}
-		
+
 					span.show {
 						display: inline !important;
 						font-size: inherit !important;
 					}
-		
+
 					img.resizeWP {
 						width: 90% !important;
 						height: auto;
 					}
-		
+
 					.valignt2b {
 						vertical-align: bottom !important;
 					}
-		
+
 					.alignc {
 						align-content: center !important;
 					}
-		
+
 					.cta {
 						display: table-cell !important;
 					}
-		
+
 					.valignt2b {
 						vertical-align: top !important;
 					}
-		
+
 					img.resizeWP {
 						width: 90% !important;
 						height: auto !important;
 					}
-		
+
 					.mb40 {
 						margin: 0 0 40px 0 !important;
 					}
-		
+
 					.mt40 {
 						margin: 40px 0 0 0 !important;
 					}
-		
+
 					.mb20 {
 						margin: 0 0 20px 0 !important;
 					}
-		
+
 					.mt20 {
 						margin: 20px 0 0 0 !important;
 					}
-		
+					
 					.mtb40 {
 						margin: 40px 0 40px 0 !important;
 					}
-		
+
 					.ptb30 {
 						padding: 30px 0 30px 0 !important;
 					}
-		
+
 					.pb20 {
 						padding: 0 0 20px 0 !important;
 					}
-		
+
 					.w12 {
 						width: 12px !important;
 					}
-		
+
 					.pb10 {
 						padding: 0px 10px 10px 20px !important;
 						min-width: auto !important;
 					}
-		
+
 					.whitepaper {
 						-webkit-box-shadow: 8px 8px 5px 2px rgba(102, 102, 102, 0.32) !important;
 						-moz-box-shadow: 8px 8px 5px 2px rgba(102, 102, 102, 0.32) !important;
 						box-shadow: 8px 8px 5px 2px rgba(102, 102, 102, 0.32) !important;
 					}
-		
+
 					.phlight {
 						text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.3) !important;
 					}
-		
+
 					.phdark {
 						text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3) !important;
 					}
+					
+					.buttonTable { width:100% }
+						.email-btn a { padding:0px !important; display:inline-block }
 				}
-		
-		
-		/* start Nadeem - new styles - */
-
-		.list-items tr { display:block; font-family: 'bt-regular-rg', Calibri, Arial, sans-serif; margin:0; padding:0 0 5px 0 }
-		.list-items tr td { font-family: 'bt-regular-rg', Calibri, Arial, sans-serif  }
-			.list-items tr td.list-text { font-family: 'bt-regular-rg', Calibri, Arial, sans-serif; font-size:16px; color:#333333 }
-			.list-items tr td.list-text a { text-decoration:underline }
-
-			.list-items td.list-bullet { vertical-align:top }
-			.no-mainimage { width:375px; padding:0 200px 0 0;  }
-
-			a[href^="tel"]{ color:inherit; text-decoration:none; }
-			.blue-text { color: #666666; text-decoration: none; cursor:text }
-			.blue-text-page { color: #333333; text-decoration: none; cursor:text }
-
-		@media screen and (max-width: 600px) {			
-				.buttonTable { width:100% }
-				.email-btn a { padding:0px !important; display:inline-block }
-				.no-mainimage { width:100%; padding:0 }
-				.no-mainimage h1 { width:100% !important }
-				.line-img img { width:53px !important; height:2px }
-		}
-
-		/* end Nadeem - new styles - */
 
 			</style>
 
-
-
-
-			
 			<style type="text/css">
 				.snippetHeader h2 { color:#6400AA }
 				.title, .snippetTypes, .snippetName, .snippetHeader { font-family:Arial, sans-serif }
@@ -469,18 +445,36 @@
 
 
 <br><br>
-	<span class="title">Downloads:</span>
-<br><br>
+	<span class="title snippetName">Page composition and downloads</span>
 
+<div class="snippetTypes">
 
-
-
-<div style="vertical-align:top; display:inline-block; padding:0 20px">
-	<a href="emailTemplate.zip" style="background-color:#6400aa; font-family: 'bt-regular-rg', Calibri , Arial, sans-serif; font-size:16px; text-decoration: none; line-height:40px; border-radius: 5px; color: #FFFFFF; display: block; border:solid 1px #6400AA; padding:0 10px 0 10px; display:inline-block"><img src="images/download.png" height="20px" align="middle" style="background-color:#fff; border-radius:4px; padding:5px; margin-bottom:5px; height:20px" />&nbsp;&nbsp;LATEST Email template, documentation and assets ( 30/08/2019 )</a><br /><br />
+<div style="vertical-align:top; display:inline-block; margin:0 20px 20px 0">
+	<img src="https://raw.githubusercontent.com/EmailMessaging/EmailMessaging.github.io/master/emailSnippets/images/smallpage.png?raw=true" width="146px" />
 </div>
 
 
+<div style="vertical-align:top; display:inline-block; margin:0; padding:0">
+	<ul class="snippetItemList">
+		<li class="generic-shade" style="font-size:16px; color:#6400AA;font-family: Arial, sans-serif">Header snippets</li>
+		<li style="font-size:16px; color:#6400AA;font-family: Arial, sans-serif">Hero snippets</li>
+		<li style="font-size:16px; color:#6400AA;font-family: Arial, sans-serif">Intro snippets</li>
+		<li style="font-size:16px; color:#6400AA;font-family: Arial, sans-serif">Section snippets</li>
+		<li class="generic-shade" style="font-size:16px; color:#6400AA;font-family: Arial, sans-serif">Footer snippet</li>
+	</ul>
+</div>
 
+
+<div style="vertical-align:top; display:inline-block; padding:0 20px 0 0">
+	<a href="emailTemplate.zip" style="background-color:#6400aa; font-family: 'bt-regular-rg', Calibri , Arial, sans-serif; font-size:16px; text-decoration: none; line-height:40px; border-radius: 5px; color: #FFFFFF; display: block; border:solid 1px #6400AA; padding:0 10px 0 10px; display:inline-block"><img src="images/download.png" height="20px" align="middle" style="background-color:#fff; border-radius:4px; padding:5px; margin-bottom:5px; height:20px" />&nbsp;&nbsp;LATEST Email template, documentation and assets ( 30/08/2019 )</a><br /><br />
+	<a href="mailto:nadeem.butt@bt.com" title="Please ping me anytime if you have any questions" style="float:left; background-color:#fff; font-family: 'bt-regular-rg', Calibri , Arial, sans-serif; font-size:16px; text-decoration: none; color: #6400AA; display: block; border:solid 1px #fff; padding:0; display:inline-block"><img src="images/email.png" align="top" style="background-color:#fff; border-radius:4px; padding:0; margin-bottom:5px; height:25px" /></a><br /><br />
+</div>
+
+</div>
+
+
+	<span class="title snippetName">Snippets</span>
+<br>
 
 <br><br>
 	<span class="title">CSS:</span>
@@ -548,7 +542,7 @@ h1, h2, h3 { font-family: calibri, arial, sans-serif !important }
 
 <br><br>
 <a style="float:right; padding-right:50px" href="#topPage">Top &uarr;</a><br><br>
-	<span class="title">Header with logo</span>
+	<span class="title">Header with logo:</span>
 <br><br>
 
 
@@ -683,7 +677,7 @@ h1, h2, h3 { font-family: calibri, arial, sans-serif !important }
 
 
 <a style="float:right; padding-right:50px" href="#topPage">Top &uarr;</a><br><br>
-	<span class="title">Hero with h1 title and main image</span>
+	<span class="title">Hero with h1 title and main image:</span>
 <br><br>
 
 
@@ -828,7 +822,7 @@ h1, h2, h3 { font-family: calibri, arial, sans-serif !important }
 <!-- Snippet starts here -->
 
 <a style="float:right; padding-right:50px" href="#topPage">Top &uarr;</a><br><br>
-	<span class="title">Hero with h1 title and no main image</span>
+	<span class="title">Hero with h1 title and no main image:</span>
 <br><br>
 
 
@@ -984,7 +978,7 @@ h1, h2, h3 { font-family: calibri, arial, sans-serif !important }
 <!-- Snippet starts here -->
 
 <a style="float:right; padding-right:50px" href="#topPage">Top &uarr;</a><br><br>
-	<span class="title">h2 title</span>
+	<span class="title">h2 title:</span>
 <br><br>
 
 
@@ -1030,7 +1024,7 @@ h1, h2, h3 { font-family: calibri, arial, sans-serif !important }
 
 
 <a style="float:right; padding-right:50px" href="#topPage">Top &uarr;</a><br><br>
-	<span class="title">Table based list</span>
+	<span class="title">Table based list:</span>
 <br><br>
 
 
@@ -1134,7 +1128,7 @@ h1, h2, h3 { font-family: calibri, arial, sans-serif !important }
 
 
 <a style="float:right; padding-right:50px" href="#topPage">Top &uarr;</a><br><br>
-	<span class="title">Boxed table based list</span>
+	<span class="title">Boxed table based list:</span>
 <br><br>
 
 
@@ -1266,7 +1260,7 @@ h1, h2, h3 { font-family: calibri, arial, sans-serif !important }
 
 
 <a style="float:right; padding-right:50px" href="#topPage">Top &uarr;</a><br><br>
-	<span class="title">Two column table content</span>
+	<span class="title">Two column table content:</span>
 <br><br>
 
 
@@ -1472,7 +1466,7 @@ h1, h2, h3 { font-family: calibri, arial, sans-serif !important }
 <!-- Snippet starts here -->
 
 <a style="float:right; padding-right:50px" href="#topPage">Top &uarr;</a><br><br>
-	<span class="title">Resizeable full width button</span>
+	<span class="title">Resizeable full width button:</span>
 <br><br>
 
 
@@ -1562,7 +1556,7 @@ h1, h2, h3 { font-family: calibri, arial, sans-serif !important }
 <!-- Snippet ends here -->
 
 <a style="float:right; padding-right:50px" href="#topPage">Top &uarr;</a><br><br>
-	<span class="title">Aligned buttons</span>
+	<span class="title">Aligned buttons:</span>
 <br><br>
 
 
@@ -1734,7 +1728,7 @@ h1, h2, h3 { font-family: calibri, arial, sans-serif !important }
 
 
 <a style="float:right; padding-right:50px" href="#topPage">Top &uarr;</a><br><br>
-	<span class="title">Heading, text and button</span>
+	<span class="title">Heading, text and button:</span>
 <br><br>
 
 
@@ -1896,7 +1890,7 @@ h1, h2, h3 { font-family: calibri, arial, sans-serif !important }
 <!-- Snippet starts here -->
 
 <a style="float:right; padding-right:50px" href="#topPage">Top &uarr;</a><br><br>
-	<span class="title">Thanks line</span>
+	<span class="title">Thanks line:</span>
 <br><br>
 
 
@@ -1982,7 +1976,7 @@ h1, h2, h3 { font-family: calibri, arial, sans-serif !important }
 <!-- Snippet starts here -->
 
 <a style="float:right; padding-right:50px" href="#topPage">Top &uarr;</a><br><br>
-	<span class="title">h2 text and image to the right</span>
+	<span class="title">h2 text and image to the right:</span>
 <br><br>
 
 
@@ -2141,7 +2135,7 @@ h1, h2, h3 { font-family: calibri, arial, sans-serif !important }
 <!-- Snippet starts here -->
 
 <a style="float:right; padding-right:50px" href="#topPage">Top &uarr;</a><br><br>
-	<span class="title">h2 text with button and image to the right</span>
+	<span class="title">h2 text with button and image to the right:</span>
 <br><br>
 
 
@@ -2357,7 +2351,7 @@ h1, h2, h3 { font-family: calibri, arial, sans-serif !important }
 
 
 <a style="float:right; padding-right:50px" href="#topPage">Top &uarr;</a><br><br>
-	<span class="title">h2 text with button and image to the left</span>
+	<span class="title">h2 text with button and image to the left:</span>
 <br><br>
 
 
@@ -2650,7 +2644,7 @@ h1, h2, h3 { font-family: calibri, arial, sans-serif !important }
 
 
 <a style="float:right; padding-right:50px" href="#topPage">Top &uarr;</a><br><br>
-	<span class="title">Bill explainer component</span>
+	<span class="title">Bill explainer component:</span>
 <br><br>
 
 
@@ -2884,7 +2878,7 @@ h1, h2, h3 { font-family: calibri, arial, sans-serif !important }
 
 
 <a style="float:right; padding-right:50px" href="#topPage">Top &uarr;</a><br><br>
-	<span class="title">Centred grey box and h3 title with text</span>
+	<span class="title">Centred grey box and h3 title with text:</span>
 <br><br>
 
 
@@ -3000,7 +2994,7 @@ h1, h2, h3 { font-family: calibri, arial, sans-serif !important }
 <!-- Snippet starts here -->
 
 <a style="float:right; padding-right:50px" href="#topPage">Top &uarr;</a><br><br>
-	<span class="title">Mac table</span>
+	<span class="title">Mac table:</span>
 <br><br>
 
 
@@ -3148,7 +3142,7 @@ h1, h2, h3 { font-family: calibri, arial, sans-serif !important }
 <!-- Snippet starts here -->
 
 <a style="float:right; padding-right:50px" href="#topPage">Top &uarr;</a><br><br>
-	<span class="title">Billing table</span>
+	<span class="title">Billing table:</span>
 <br><br>
 
 
@@ -3328,7 +3322,7 @@ h1, h2, h3 { font-family: calibri, arial, sans-serif !important }
 <!-- Snippet starts here -->
 
 <a style="float:right; padding-right:50px" href="#topPage">Top &uarr;</a><br><br>
-	<span class="title">Phone numbers table</span>
+	<span class="title">Phone numbers table:</span>
 <br><br>
 
 
@@ -3753,7 +3747,7 @@ h1, h2, h3 { font-family: calibri, arial, sans-serif !important }
 <!-- Snippet starts here -->
 
 <a style="float:right; padding-right:50px" href="#topPage">Top &uarr;</a><br><br>
-	<span class="title">Order complete table</span>
+	<span class="title">Order complete table:</span>
 <br><br>
 
 
@@ -4895,7 +4889,7 @@ h1, h2, h3 { font-family: calibri, arial, sans-serif !important }
 <!-- Snippet starts here -->
 
 <a style="float:right; padding-right:50px" href="#topPage">Top &uarr;</a><br><br>
-	<span class="title">Track your order</span>
+	<span class="title">Track your order:</span>
 <br><br>
 
 
@@ -5037,7 +5031,7 @@ h1, h2, h3 { font-family: calibri, arial, sans-serif !important }
 
 
 <a style="float:right; padding-right:50px" href="#topPage">Top &uarr;</a><br><br>
-	<span class="title">Footer</span>
+	<span class="title">Footer:</span>
 <br><br>
 
 
