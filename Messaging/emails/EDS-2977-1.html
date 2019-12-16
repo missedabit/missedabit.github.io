@@ -733,8 +733,8 @@
 											Order number: <b>[OrderNumber]</b><br>
 											Username: <b>[UserName]</b><br><br>
 											We're making good progress with your order, and have new dates to confirm with you:<br><br>
-											Event: <b>[Day] [DD/MMMM/YYYY]</b><br>
-											Event: <b>[Day] [DD/MMMM/YYYY] between [Time] and [Time]</b><br><br>
+											[EventName]: <b>[Day] [DD/MMM/YYYY]</b><br>
+											[EventName]: <b>[Day] [DD/MMM/YYYY] between [Time] and [Time]</b><br><br>
 										</span>
 									</td>
 								</tr>
@@ -749,33 +749,45 @@
 
 
 		<tr>
-			<td align="center">
-				<table width="600" class="fluid" style="margin: 0; table-layout: fixed; max-width: 600px; width: 600px;" bgcolor="#FFFFFF" border="0" cellspacing="0" cellpadding="0">			
-					<tr>
-						<td align="center" style="padding:0 20px 0;">
-							<table border="0" cellpadding="0" cellspacing="0" align="left" style="border: none; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0; mso-table-rspace: 0; table-layout: fixed;" width="100%" role="presentation">
-								<tbody>
+			<td align="center" style="padding:0"> 	
+		
+				<table border="0" bgcolor="#ffffff" class="fluid" width="600" cellpadding="0" cellspacing="0" style="border: none; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0; mso-table-rspace: 0; table-layout: fixed; box-sizing: border-box;">
+					<tbody>
+						<tr>
+							<th valign="top" align="left" style="padding:0 20px 0 0">
+								<table role="presentation" cellpadding="0" cellspacing="0" border="0" class="fluid">
+									<tbody>
 
-									<tr>
-										<td align="left" height="40" style="padding:0 0 20px 0;">
-											<table cellspacing="0" cellpadding="0" class="buttonTable" align="left">
-												<tr>
-													<td class="email-btn" align="center" height="40" bgcolor="#6400aa" style="border-radius: 5px; color: #FFFFFF; display: block; border:solid 1px #6400AA; padding:0 20px">
-														<a href="https://url" target="_blank" style="font-family: 'bt-regular-rg', Calibri , Arial, sans-serif; font-size:16px; text-decoration: none; line-height:40px; width:100%; display:inline-block">
-															<span style="color: #FFFFFF">Track your order</span>
-														</a>
-													</td>
-												</tr>
-											</table>
-										</td>
-									</tr>	
-									
-								</tbody>
-							</table>
-						</td>
-					</tr>
-					
+										<tr>
+											<td align="left" valign="top" class="breakme" style="padding:0">
+												<table class="buttonTable emailwrapto100pc" border="0" cellpadding="0" cellspacing="0" valign="top" style="padding:0; color: #333333; font-family: 'bt-regular-lt', Calibri, Arial, sans-serif; font-size:16px; line-height:26px; mso-line-height-rule:exactly; font-weight: 400; line-height: 1.4;">
+													<tbody>
+														<tr>
+															<td align="left" height="40" style="padding:0 0 20px 20px">
+																<table cellspacing="0" cellpadding="0" align="left" class="buttonTable">
+																	<tr>
+																		<td  class="email-btn" align="center" height="40" bgcolor="#6400aa" style="border-radius: 5px; color: #FFFFFF; display: block; border:solid 1px #6400AA; padding:0 20px">
+																			<a href="https://url" target="_blank" style="font-family: 'bt-regular-rg', Calibri , Arial, sans-serif; font-size:16px; text-decoration: none; line-height:40px; width:100%; display:inline-block">
+																				<span style="color: #FFFFFF">
+																					Track your order</span>
+																			</a>
+																		</td>
+																	</tr>
+																</table> 
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</td>
+										</tr>	
+																				
+									</tbody>
+								</table>
+							</th>
+						</tr>
+					</tbody>
 				</table>
+				
 			</td>
 		</tr>
 				
@@ -852,18 +864,18 @@
 																			<td width="340px" align="left" style="width:340px; padding:0 0 0 0"><h3 style="padding:0; margin:0; color:#333333; font-family: 'bt-regular-lt', Calibri, Arial, sans-serif; font-size:26px; line-height:26px; mso-line-height-rule:exactly; font-weight: 300;">Your broadband</h3></td>
 																			<td width="140px" class="hide" align="left" style="width:140px; padding:0 0 0 0"></td>
 																		</tr>
-																		<tr><td colspan="2" class="list-text" align="left" style="padding:20px 0 0 0">Estimated Smart Hub delivery: <b>[DD/MMMM/YYYY]</b></td></tr>
-																		<tr><td colspan="2" class="list-text" align="left" style="padding:0 0 0 0">Expert Setup appointment: <b>[DD/MMMM/YYYY] between <a class="blue-text-page" style="color: #333333; text-decoration: none; cursor:text">[Time] and [Time]</a></b></td></tr>
-																		<tr><td colspan="2" class="list-text" align="left" style="padding:0 0 0 0">Engineer appointment: <b>[DD/MMMM/YYYY] between <a class="blue-text-page" style="color: #333333; text-decoration: none; cursor:text">[Time] and [Time]</a></b></td></tr>
-																		<tr><td colspan="2" class="list-text" align="left" style="padding:0 0 0 0">Fast Track engineer appointment: <b>[DD/MMMM/YYYY] between <a class="blue-text-page" style="color: #333333; text-decoration: none; cursor:text">[Time] and [Time]</a></b></td></tr>
+																		<tr><td colspan="2" class="list-text" align="left" style="padding:20px 0 0 0">[ProductName] estimated delivery: <b>[DD/MMM/YYYY]</b></td></tr>
+																		<tr><td colspan="2" class="list-text" align="left" style="padding:0 0 0 0">Expert Setup appointment: <b>[DD/MMM/YYYY] between <a class="blue-text-page" style="color: #333333; text-decoration: none; cursor:text">[Time] and [Time]</a></b></td></tr>
+																		<tr><td colspan="2" class="list-text" align="left" style="padding:0 0 0 0">Estimated engineer appointment: <b>[DD/MMM/YYYY] between <a class="blue-text-page" style="color: #333333; text-decoration: none; cursor:text">[Time] and [Time]</a></b></td></tr>
+																		<tr><td colspan="2" class="list-text" align="left" style="padding:0 0 0 0">Fast Track engineer appointment: <b>[DD/MMM/YYYY] between <a class="blue-text-page" style="color: #333333; text-decoration: none; cursor:text">[Time] and [Time]</a></b></td></tr>
 															
 																		<tr><td colspan="2" class="list-text" align="left" style="padding:20px 0 0 0">
 																	<!--  START: If fast track -->
-																			Please note that a Fast Track engineer appointment wasn't available. You won't be charged for this service. We're sorry for any inconvenience.<br><br>We're happy to confirm the Fast Track engineer appointment you requested. So you'll be up and running as quickly as possible.
+																			Please note that a Fast Track engineer appointment wasn't available. You won't be charged for this service. We're sorry for any inconvenience.<br><br>We're happy to confirm the Fast Track engineer appointment you requested. So you'll be up and running as quickly as possible.<br><br>
 																	<!--  END: If fast track -->	
 																	<!--  START: If engineering appointment -->			
-																			<br><br>Your Engineering Appointment Date will be confirmed within 10 working days of the order placement.<br><br>
-																			Please note that an engineer will also be required to do some work up to the outside wall of your premise and our Supplier will get in touch with you shortly to advise on a date.
+																			We'll confirm your engineer appointment within 10 working days after you placed your order.<br><br>
+																			An engineer will need to do installation work up to the outside wall of your premises.  Our supplier will get in touch with you shortly to advise when this will happen.
 																	<!--  END: If engineering appointment -->			
 																		</td></tr>
 																		
@@ -905,8 +917,8 @@
 																				<td width="340px" align="left" style="width:340px; padding:0 0 0 0"><h3 style="padding:0; margin:0; color:#333333; font-family: 'bt-regular-lt', Calibri, Arial, sans-serif; font-size:26px; line-height:26px; mso-line-height-rule:exactly; font-weight: 300;">Your BT Cloud Voice Express</h3></td>
 																				<td width="140px" class="hide" align="left" style="width:140px; padding:0 0 0 0"></td>
 																			</tr>
-																			<tr><td colspan="2" class="list-text" align="left" style="padding:20px 0 0 0">Estimated [Model] phone delivery: <b>[DD/MMMM/YYYY]</b></td></tr>
-																			<tr><td colspan="2" class="list-text" align="left" style="padding:0 0 0 0">[EventName]: <b>[DD/MMMM/YYYY] between <span class="blue-text-page" style="color: #333333; text-decoration: none; cursor:text">[Time] and [Time]</span></b></td></tr>
+																			<tr><td colspan="2" class="list-text" align="left" style="padding:20px 0 0 0">[ProductName] estimated delivery: <b>[DD/MMM/YYYY]</b></td></tr>
+																			<tr><td colspan="2" class="list-text" align="left" style="padding:0 0 0 0">[EventName]: <b>[DD/MMM/YYYY] between <span class="blue-text-page" style="color: #333333; text-decoration: none; cursor:text">[Time] and [Time]</span></b></td></tr>
 																		</table>
 																	</td>
 																</tr>
@@ -946,8 +958,8 @@
 																			<td width="340px" align="left" style="width:340px; padding:0 0 0 0"><h3 style="padding:0; margin:0; color:#333333; font-family: 'bt-regular-lt', Calibri, Arial, sans-serif; font-size:26px; line-height:26px; mso-line-height-rule:exactly; font-weight: 300;">Your BT Mobile</h3></td>
 																			<td width="140px" class="hide" align="left" style="width:140px; padding:0 0 0 0"></td>
 																		</tr>
-																		<tr><td colspan="2" class="list-text" align="left" style="padding:20px 0 0 0">Estimated [MobileName] delivery: <b>[DD/MMMM/YYYY]</b></td></tr>
-																		<tr><td colspan="2" class="list-text" align="left" style="padding:0 0 0 0">[EventName]: <b>[DD/MMMM/YYYY] between <span class="blue-text-page" style="color: #333333; text-decoration: none; cursor:text">[Time] and [Time]</span></b></td></tr>
+																		<tr><td colspan="2" class="list-text" align="left" style="padding:20px 0 0 0">[ProductName] estimated delivery: <b>[DD/MMM/YYYY]</b></td></tr>
+																		<tr><td colspan="2" class="list-text" align="left" style="padding:0 0 0 0">[EventName]: <b>[DD/MMM/YYYY]</b></td></tr>
 																	</table>
 																</td>
 															</tr>
@@ -1131,7 +1143,7 @@
 																															<tbody>
 																																<tr>
 																																	<td align="left">
-																																		<h2 style="padding:0; margin:0; color:#ffffff; font-family: 'bt-regular-lt', Calibri, Arial, sans-serif; font-size:26px; line-height:26px; mso-line-height-rule:exactly; font-weight: 300;">Make things easy in My Account</h2>
+																																		<h2 style="padding:0; margin:0; color:#ffffff; font-family: 'bt-regular-lt', Calibri, Arial, sans-serif; font-size:26px; line-height:26px; mso-line-height-rule:exactly; font-weight: 300;">Make things easy in My account</h2>
 																																	</td>
 																																</tr>
 																															</tbody>
@@ -1156,8 +1168,8 @@
 																	<td align="left" valign="top" style="padding:20px 20px 0 20px">
 																		<br />
 																		<span style="color: #333333; font-family: 'bt-regular-rg', Calibri, Arial, sans-serif; font-size:16px; line-height:21px; mso-line-height-rule:exactly; margin: 0 0 0 0;">
-																			There's so much you can do in My Account - your personal and secure area of our site. Just sign in with your username <b>[Username]</b> and chosen password.<br><br>
-																			First time using My Account? To get you started, we'll send you a separate email with a temporary password.  Just enter it along with your username when you sign in.<br /><br />
+																			There's so much you can do in My account - your personal and secure area of our site. Just sign in with your username <b>[Username]</b> and chosen password.<br><br>
+																			First time using My account? To get you started, we'll send you a separate email with a temporary password.  Just enter it along with your username when you sign in.<br /><br />
 																			And if you ever forget your username or password, just follow the simple steps when you sign in to get a reminder.
 																		</span>
 																		
@@ -1180,7 +1192,7 @@
 																										<tr>
 																											<td class="email-btn" align="center" valign="middle" height="40" style="border-radius: 5px; color: #6400aa; display: block; border:1px solid #6400aa; padding:0 20px">
 																												<a href="https://url" target="_blank" class="emailBtn" style="font-family: 'bt-regular-rg', Calibri , Arial, sans-serif; font-size:16px; text-decoration: none; line-height:40px; width:100%; mso-line-height-rule:exactly; display:inline-block">
-																													<span style="color: #6400aa; font-family: 'bt-regular-rg', Calibri , Arial, sans-serif; font-size:16px; text-decoration: none; line-height:40px; width:100%; mso-line-height-rule:exactly; display:inline-block">Sign in to My Account</span>
+																													<span style="color: #6400aa; font-family: 'bt-regular-rg', Calibri , Arial, sans-serif; font-size:16px; text-decoration: none; line-height:40px; width:100%; mso-line-height-rule:exactly; display:inline-block">Sign in to My account</span>
 																												</a>
 																											</td>
 																										</tr>
